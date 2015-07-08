@@ -45,3 +45,5 @@ end
 
 # Help Heroku Out
 gem 'rails_12factor', group: :production
+
+gem "haml-rails", "~> 0.9"
