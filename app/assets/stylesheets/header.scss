@@ -1,0 +1,50 @@
+header {
+  margin-bottom:65px;
+  .project-title {
+    font-size:64px;
+    font-family:HelveticaNeueLTStd-Hv;
+    text-align:center;
+    margin:48px 0 32px 0;
+    font-weight:bold;
+    :nth-child(1):hover {
+      color:pink;        
+    }
+    :nth-child(2):hover {
+      color:green;        
+    }
+    :nth-child(3):hover {
+      color:blue;        
+    }
+    :nth-child(4):hover {
+      color:orange;        
+    }
+    :nth-child(5):hover {
+      color:silver;        
+    }
+    :nth-child(6):hover {
+      color:red;        
+    }
+    :nth-child(7) {
+      color:grey;        
+    }
+    :nth-child(8):hover {
+      color:maroon;        
+    }
+  }
+  .main-nav {
+    font-family:HelveticaNeueLTStd-Th;
+    width:33%;
+    margin:auto;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+  }
+  .main-nav li {
+    float:left;
+    padding:8px 14px 4px 14px;
+    font-size:11px;
+  }
+  .main-nav .active{
+    border:1px solid #d8d8d8;
+  }
+}
