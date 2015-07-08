@@ -1,3 +1,5 @@
-// Place all the styles related to the SiteTree controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body.site_tree {
+  .site-branch {
+    color:rgba(0,0,0,.6);    
+  }
+}

@@ -26,6 +26,7 @@ module ClientSite
     # add fonts dir to pipeline
     config.assets.enabled = true
     config.assets.paths << Rails.root.join('/app/assets/fonts')
+    
   end
 end
 

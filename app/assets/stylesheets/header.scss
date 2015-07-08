@@ -1,6 +1,31 @@
+body.site_tree {
+  .main-nav #site-map{
+    border-right:1px solid #d8d8d8;
+    border-left:1px solid #d8d8d8;
+  }
+}
+body.copy {
+  .main-nav #copy{
+    border-top:1px solid #d8d8d8;
+    border-bottom:1px solid #d8d8d8;
+  }
+}
+body.design {
+  .main-nav #design{
+    border-left:1px solid #d8d8d8;
+    border-bottom:1px solid #d8d8d8;
+  }
+}
+body.development {
+  .main-nav #development{
+    border-top:1px solid #d8d8d8;
+    border-right:1px solid #d8d8d8;
+  }
+}
 header {
   margin-bottom:65px;
   .project-title {
+    color:#444;
     font-size:64px;
     font-family:HelveticaNeueLTStd-Hv;
     text-align:center;
@@ -33,7 +58,7 @@ header {
   }
   .main-nav {
     font-family:HelveticaNeueLTStd-Th;
-    width:33%;
+    width:34%;
     margin:auto;
     font-size:12px;
     text-transform:uppercase;
@@ -43,8 +68,9 @@ header {
     float:left;
     padding:8px 14px 4px 14px;
     font-size:11px;
-  }
-  .main-nav .active{
-    border:1px solid #d8d8d8;
+    border:1px solid rgba(255,255,255,0);
+    a {
+      padding:8px 0;
+    }
   }
 }

@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+  get 'copy/index'
+
+  get 'development/index'
+
   root 'site_tree#index'
+  get 'site-tree/index'
+  get 'design/index'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

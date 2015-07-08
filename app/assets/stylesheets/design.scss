@@ -1,0 +1,23 @@
+ul.folder-holder {
+  text-align:center;
+  width:46%;
+  margin:auto;
+  position:relative;
+  padding:30px;
+  li {
+    float:left;
+    padding-right:50px;
+    margin-left:60px;
+    img {
+      margin-left:-30px;
+      width:146px;
+      height:auto;
+    }
+    p {
+      font-size:12px;
+      padding: 14px 0;
+      text-transform:uppercase;
+      opacity:.6;
+    }
+  }
+}

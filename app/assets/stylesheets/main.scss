@@ -1,6 +1,13 @@
 * {
   box-sizing:border-box;
 }
+a {
+  text-decoration:none;
+  color:#000;
+  &:hover {
+  }
+  
+}
 .clearfix  { 
   overflow :  auto ; 
   zoom :  1 ; 

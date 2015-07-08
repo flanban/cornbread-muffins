@@ -1,16 +1,13 @@
 %body
   %header
     %h1.project-title
-      %span s
-      %span u
-      %span i
-      %span t
-      %span l
-      %span e
-      %span s
-      %span s
+      <span>s</span><span>u</span><span>i</span><span>t</span><span>l</span><span>e</span><span>s</span><span>s</span>
     %ul.main-nav.clearfix
-      %li.active Site Map
-      %li Copy
-      %li Design
-      %li Development
+      %li#site-map
+        =link_to('site map', site_tree_index_path)
+      %li#copy
+        =link_to('copy', copy_index_path)
+      %li#design
+        =link_to('design', design_index_path)
+      %li#development
+        =link_to('development', development_index_path)
