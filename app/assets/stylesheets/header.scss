@@ -63,14 +63,15 @@ header {
     font-size:12px;
     text-transform:uppercase;
     letter-spacing:3px;
-  }
-  .main-nav li {
-    float:left;
-    padding:8px 14px 4px 14px;
-    font-size:11px;
-    border:1px solid rgba(255,255,255,0);
-    a {
-      padding:8px 0;
+    overflow:hidden;
+    li {
+      float:left;
+      padding:8px 14px 4px 14px;
+      font-size:11px;
+      border:1px solid rgba(255,255,255,0);
+      a {
+        padding:8px 0;
+      }
     }
   }
 }

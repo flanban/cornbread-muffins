@@ -38,38 +38,3 @@ ul {
   clear:both;
 }
 
-.site-branch {
-  text-transform:uppercase;
-  font-size:11px;
-  width:33%;
-  left:36%;
-  position:relative;
-}
-.site-branch .left {
-  position:absolute;
-  padding: 0 30px;
-  top:115px;
-}
-.site-branch .right {
-  position:absolute;
-  left:50%;
-  padding: 0% 30px;
-}
-.site-branch ul li {
-  padding:15px 10px;
-}
-.site-branch .divider-line-horizontal {
-  position: absolute;
-  right: -82px;
-  top: 4px;
-  opacity:.2;
-  width:85%;
-}
-.site-branch .divider-line-vertical {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity:.2;
-  height: 80%;
-  margin: 20% 0;
-}

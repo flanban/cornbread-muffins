@@ -1,5 +1,38 @@
 body.site_tree {
   .site-branch {
     color:rgba(0,0,0,.6);    
+    text-transform:uppercase;
+    font-size:11px;
+    width:33%;
+    left:34%;
+    position:relative;
+    .left {
+      position:absolute;
+      padding: 0 30px;
+      top:115px;
+    }
+    .right {
+      position:absolute;
+      left:50%;
+      padding: 0% 30px;
+    }
+    ul li {
+      padding:15px 10px;
+    }
+    .divider-line-horizontal {
+      position: absolute;
+      right: -82px;
+      top: 4px;
+      opacity:.2;
+      width:85%;
+    }
+    .divider-line-vertical {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity:.2;
+      height: 80%;
+      margin: 20% 0;
+    } 
   }
 }

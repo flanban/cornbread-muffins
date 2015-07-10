@@ -1,6 +1,6 @@
 body.copy {
   .copy-pages {
-    width:35%;
+    width:37%;
     padding:0 20px;
     float:left;
     text-align:right;
@@ -23,8 +23,8 @@ body.copy {
     padding-right:20px;
     width:40%;
     float:left;
-    margin-left:50px;
-    li {
+    margin-left:20px;
+    > li {
       display:none;
       &:first-child {
         display:block;
@@ -33,12 +33,18 @@ body.copy {
         font-size:16px;
         font-family:HelveticaNeueLTStd-Th;
         text-transform:uppercase;
-        margin-bottom:1em;
+        margin-bottom:.5em;
         line-height:1.2;
       }
       h3 {
         margin-bottom:1em;
         font-size:14px;
+      }
+      h5 {
+        font-size:14px;
+        font-style:italic;
+        font-family:HelveticaNeueLTStd-Th; 
+        line-height:1.2;
       }
       p {
         margin-bottom:1em;
@@ -46,6 +52,14 @@ body.copy {
         font-family:HelveticaNeueLTStd-Th; 
         max-width:80%;
         line-height:1.2;       
+      }
+      li {
+        font-family:HelveticaNeueLTStd-Th;
+        margin-bottom:4px;
+        span {
+          color:rgba(0,0,0,.4);
+        }
+        
       }
     }
   }
