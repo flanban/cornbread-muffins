@@ -47,3 +47,5 @@ end
 gem 'rails_12factor', group: :production
 
 gem "haml-rails", "~> 0.9"
+
+gem 'newrelic_rpm'
