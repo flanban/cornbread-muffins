@@ -6,18 +6,21 @@ ul.folder-holder {
   padding:30px;
   li {
     float:left;
-    padding-right:50px;
+    padding-right: 34px;
     margin-left:60px;
     img {
       margin-left:-30px;
+      margin-bottom:8px;
       width:146px;
       height:auto;
     }
-    p {
+    a {
+      display:block;
       font-size:12px;
       padding: 14px 0;
       text-transform:uppercase;
       opacity:.5;
+      width:144px;
     }
   }
 }

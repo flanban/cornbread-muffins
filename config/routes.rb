@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   get 'copy/index'
-
+  match "/copy", to: "copy#index", via: 'get', as: 'copy'
   get 'development/index'
-
+  match "/development", to: "development#index", via: 'get', as: 'development'
   root 'site_tree#index'
   get 'site-tree/index'
+  match "/site-map", to: "site_tree#index", via: 'get', as: 'site-map'
   get 'design/index'
+  match "/design", to: "design#index", via: 'get', as: 'design'
+  get 'design/ui_and_ux'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
