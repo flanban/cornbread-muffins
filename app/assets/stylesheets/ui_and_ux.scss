@@ -1,0 +1,35 @@
+body.ui_and_ux.design {
+  > h2 {
+    font-family: HelveticaNeueLTStd-UltLt;
+    font-size:64px;
+    text-align:right;
+    color:rgba(0,0,0,.15);
+    line-height:.9;
+  }
+  .left, .right {
+    float:left;
+    padding:10px;
+  }
+  .left {
+    width:47%;
+  }
+  .right { 
+    width:30%;
+  }
+  ul.ui-pages {
+    color: rgba(0,0,0,.6);
+    text-transform:uppercase;
+    margin-top:-12px;
+    li {
+      a {
+        display:block;
+        padding: 8px 0;
+        font-size:13px;
+        color:rgba(0,0,0,.6);   
+        &:hover {
+          color:rgba(0,0,0,1);             
+        }     
+      }
+    }
+  }
+}

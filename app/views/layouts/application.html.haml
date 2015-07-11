@@ -6,6 +6,6 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-  %body{:class => "#{controller.controller_name} #{@body_class}".strip}
+  %body.clearfix{:class => "#{controller.controller_name} #{controller.action_name}  #{@body_class} ".strip}
     = render "partials/header"
     = yield

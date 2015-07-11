@@ -5,6 +5,11 @@ src: url("fonts/HelveticaNeueLTStd-Hv.otf") format("opentype");
 }
 @font-face {
 font-family: HelveticaNeueLTStd-Th;
-font-weight: 100;
+font-weight: 200;
 src: url("fonts/HelveticaNeueLTStd-Th.otf") format("opentype");
+}
+@font-face {
+font-family: HelveticaNeueLTStd-UltLt;
+font-weight: 100;
+src: url("fonts/HelveticaNeueLTStd-UltLt.otf") format("opentype");
 }
