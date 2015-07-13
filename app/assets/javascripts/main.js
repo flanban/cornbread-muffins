@@ -2,8 +2,7 @@ $(function() {
   
 
   function loadSlider() {
-    $('.slider-nav, .image-slider').fadeIn('slow');
-    
+        $('.slider-nav, .image-slider').fadeIn('slow');
 //      jQuery(document).ready(function($) {
         $(".image-slider").royalSlider({
           keyboardNavEnabled: true,
@@ -16,7 +15,7 @@ $(function() {
 
   
   
-  $('.loads-slider').click(function(e) {
+  $('.slider-link').click(function(e) {
     e.preventDefault();
     loadSlider();
   });
