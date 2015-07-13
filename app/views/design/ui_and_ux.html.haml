@@ -1,17 +1,28 @@
-
+%div.slider-nav.hidden
+  %span.button-close close
+  %p.rsCaption
+    Home Page Wireframe UI v1.0
+.royalSlider.image-slider.hidden
+  %p poo
+  
 %h2.left UI</br>&</br>UX
   
 %dl.right.ui-pages.accordion
-  %dt
-    =link_to('Home','#')
-  %dd
-    =link_to( 'v1.0', '#', :class => 'slider-link' )
-    -# =link_to('v1.0 w/ Labels','#')
 
-  %dt.strikethru
+  %dt
+    =link_to 'Home','#'
+  %dd
+    =link_to 'v1.0', '#', :class => "slider-link", :'data-page-name' => '<div>Home</div><div>poo</div>'
+  %dt
+    =link_to('Pricing','#')
+  %dd
+    =link_to 'v1.0', '#', :class => "slider-link", :'data-page-name' => '<div>Pricing</div><div>poo</div>'
+  
+
+  %dt
     =link_to('HR','#')
-  %dd.strikethru
-    =link_to('v0.0','#')
+  %dd
+    =link_to 'v1.0', image_path('spacecat.png')
 
   %dt.strikethru
     =link_to('Tax','#')
@@ -20,11 +31,6 @@
 
   %dt.strikethru
     =link_to('Law','#')
-  %dd.strikethru
-    =link_to('v0.0','#')
-
-  %dt.strikethru
-    =link_to('Pricing','#')
   %dd.strikethru
     =link_to('v0.0','#')
 
