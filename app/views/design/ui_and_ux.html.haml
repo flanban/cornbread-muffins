@@ -1,17 +1,36 @@
 
 %h2.left UI</br>&</br>UX
   
-%ul.right.ui-pages
-  %li
+%dl.right.ui-pages.accordion
+  %dt
     =link_to('Home','#')
-  %li
-    =link_to('HR','#')
-  %li
-    =link_to('Tax','#')
-  %li
-    =link_to('Law','#')
-  %li
-    =link_to('Pricing','#')
-  %li
-    =link_to('Blog','#')
+  %dd
+    =link_to( 'v1.0', '#', :class => 'loads-slider' )
+    -# =link_to('v1.0 w/ Labels','#')
 
+  %dt.strikethru
+    =link_to('HR','#')
+  %dd.strikethru
+    =link_to('v0.0','#')
+
+  %dt.strikethru
+    =link_to('Tax','#')
+  %dd.strikethru
+    =link_to('v0.0','#')
+
+  %dt.strikethru
+    =link_to('Law','#')
+  %dd.strikethru
+    =link_to('v0.0','#')
+
+  %dt.strikethru
+    =link_to('Pricing','#')
+  %dd.strikethru
+    =link_to('v0.0','#')
+
+  %dt.strikethru
+    =link_to('Blog','#')
+  %dd.strikethru
+    =link_to('v0.0','#')
+
+  

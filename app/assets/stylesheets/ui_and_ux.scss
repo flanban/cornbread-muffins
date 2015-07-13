@@ -16,11 +16,11 @@ body.ui_and_ux.design {
   .right { 
     width:30%;
   }
-  ul.ui-pages {
+  .ui-pages {
     color: rgba(0,0,0,.6);
     text-transform:uppercase;
     margin-top:-12px;
-    li {
+    dt,dd {
       a {
         display:block;
         padding: 8px 0;
@@ -29,6 +29,13 @@ body.ui_and_ux.design {
         &:hover {
           color:rgba(0,0,0,1);             
         }     
+      }
+    }
+    dd {
+      text-indent:1em;
+      text-transform:lowercase;
+      a {
+        padding: 4px 0;        
       }
     }
   }

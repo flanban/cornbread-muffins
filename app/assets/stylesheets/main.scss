@@ -8,9 +8,11 @@ a {
   }
   
 }
+
+
 .clearfix  { 
-  overflow :  auto ; 
-  zoom :  1 ; 
+  overflow :auto; 
+  zoom :1; 
 }
 .divider-line-horizontal {
   background: image-url('horizontal-divider-black.png');
@@ -23,6 +25,15 @@ a {
   height:1000px;
   width:1px;
   display:block;
+}
+
+.strikethru {
+  text-decoration: line-through;
+  opacity:.4;
+}
+
+.hidden {
+  display:none;
 }
 
 body {
