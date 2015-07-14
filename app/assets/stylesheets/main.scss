@@ -35,14 +35,23 @@ a {
 .hidden {
   display:none;
 }
-
+html { height:100%;}
 body {
-  font-family:helvetica;
-  max-width:1180px;
-  margin:auto;
+  font-family:HelveticaNeueLTStd-Th;
+  //font-family:Helvetica;
+  #wrapper {
+    max-width:1180px;
+    margin:auto;    
+  }
 }
 ul {
   text-decoration:none;
+}
+
+a {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
 }
 
 #content {

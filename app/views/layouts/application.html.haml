@@ -7,8 +7,22 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body.clearfix{:class => "#{controller.controller_name} #{controller.action_name}  #{@body_class} ".strip}
-    = render "partials/header"
-    = yield
-    
+    .close-paging-example.hidden close
+    .paging-example-container.hidden
+      %section
+        step 1
+        %p scroll...
+      %section
+        step 2
+      %section
+        step 3
+      %section
+        step 4
+      %section
+        step 5
+    #wrapper
+      = render "partials/header"
+      = yield
+
 
     
