@@ -25,6 +25,10 @@ class DesignController < ApplicationController
     render :layout => false
   end
   
+  def ui_navigation
+    render :layout => false
+  end
+  
   def ui_tax
     render :layout => false
   end

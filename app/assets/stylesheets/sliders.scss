@@ -7,16 +7,7 @@
       overflow:auto;
     }
   }
-  .rsGCaption {
-    position: fixed;
-    top: 18px;
-    left:40px;
-    padding:2px;
-    z-index:130;
-    text-align:left;
-    text-transform:uppercase;
-    letter-spacing:2px;
-  }
+
 }
 .descriptive-flyout {
   position: fixed;
@@ -61,6 +52,9 @@
   .rsImg {
     display: block;
     margin: auto;
+    padding: 0 90px;
+    width:100%;
+    background-color:#333;
   }
 }
 .slider-nav {
@@ -72,7 +66,8 @@
   position:fixed;
   top:0;
   left:0;
-  background:#fff;
+  background:#000;
+  color:#eee;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   transition: opacity 500ms;
@@ -80,16 +75,18 @@
     opacity:.8;
   }
   > span {
-    margin-left:10px;
+    margin-left:20px;
     float:right;
-    font-family:HelveticaNeueLTStd-Hv;
-    font-size:20px;
+    //font-family:HelveticaNeueLTStd-Hv;
+    //font-size:20px;
     cursor:pointer;
     text-align:right;
+    z-index: 10;
+    padding:2px;
+    text-transform:uppercase;
+    position: relative;
     &:hover {
       text-decoration:underline;
     }
-  }
-  .rsCaption {
   }
 }

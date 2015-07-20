@@ -10,9 +10,13 @@ $( document ).ready(function(e) {
     //console.log(slideNum)
   });
   // close sliders
+  function destroyCaption() {
+    $(".rsGCaption").remove();
+  }
   $('body').on('click', '.button-close', function (e){
       e.preventDefault();
       $('.slider-nav, .image-slider, #slider-wrapper').fadeOut('slow');
+      destroyCaption();
   });
   
   ///////////// slide descrition flyout //////////////
@@ -39,8 +43,10 @@ $( document ).ready(function(e) {
   });
 });
 
-  
+///////////////// init slider ///////////////////
+
 function initSlider() {
+  
   var si = $('.royalSlider').royalSlider({
     controlNavigation:'none',
     imageScaleMode:'none',
@@ -54,6 +60,7 @@ function initSlider() {
     addActiveClass:true,
     startSlideId:slideNum, 
   }).data('royalSlider');
+  $('.rsGCaption').appendTo('.slider-nav');
 }
 
 initSlider();

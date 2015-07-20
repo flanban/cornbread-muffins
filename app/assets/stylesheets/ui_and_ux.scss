@@ -1,5 +1,16 @@
 body.ui_and_ux.design {
   //height:100%;
+  .rsGCaption {
+    position: fixed;
+    top: 18px;
+    left:40px;
+    padding:2px;
+    text-align:left;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#eee;
+
+  }
   #wrapper > h2 {
     font-family: HelveticaNeueLTStd-UltLt;
     font-size:64px;

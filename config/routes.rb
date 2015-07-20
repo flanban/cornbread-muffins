@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'design/ui_tax'
   get 'design/ui_hr'
   get 'design/ui_about'
+  get 'design/ui_navigation'
   get 'design/ui_pricing'
   get 'design/ui_home'
   get 'design/ui_blog'
