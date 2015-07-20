@@ -7,7 +7,7 @@ $( document ).ready(function(e) {
     $('.slider-nav').fadeIn('slow');
     $('.royalSlider, #slider-wrapper').fadeIn();
     slideNum = $(this).index();
-    console.log(slideNum)
+    //console.log(slideNum)
   });
   
 
