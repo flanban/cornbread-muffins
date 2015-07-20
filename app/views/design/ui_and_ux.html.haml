@@ -1,5 +1,11 @@
+
+.descriptive-flyout
+  .button-close-description close
+  %p.descriptive-text
+  
 %div.slider-nav.hidden
   %span.button-close close
+  %span.button-descriptive-flyout slide description
   
 #slider-wrapper
   
@@ -20,6 +26,11 @@
     =link_to 'v1', { :controller => "design", :action => "ui_pricing" }, :remote => true, :class => 'slider-link'
 
   %dt
+    =link_to('About','#')
+  %dd
+    =link_to 'v1', { :controller => "design", :action => "ui_about" }, :remote => true, :class => 'slider-link'
+
+  %dt
     =link_to('Blog','#')
   %dd
     =link_to 'root page v1', { :controller => "design", :action => "ui_blog" }, :remote => true, :class => 'slider-link'
@@ -33,12 +44,12 @@
   %dt
     =link_to('HR','#')
   %dd
-    =link_to 'space cat', image_path('spacecat.png')
-
-  %dt.strikethru
+    =link_to 'v1', { :controller => "design", :action => "ui_hr" }, :remote => true, :class => 'slider-link'
+  
+  %dt
     =link_to('Tax','#')
-  %dd.strikethru
-    =link_to('v0.0','#')
+  %dd
+    =link_to 'v1', { :controller => "design", :action => "ui_tax" }, :remote => true, :class => 'slider-link'
 
 
 

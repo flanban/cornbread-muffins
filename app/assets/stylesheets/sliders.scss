@@ -18,7 +18,33 @@
     letter-spacing:2px;
   }
 }
-
+.descriptive-flyout {
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  right: -420px;
+  height: 100%;
+  width: 420px;
+  padding:40px 60px 40px 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 300;
+  -webkit-transition: margin 500ms;
+  -moz-transition: margin 500ms;
+  transition: margin 500ms;
+  .descriptive-text {
+    line-height:1.4;
+  }
+  .button-close-description {
+    position:absolute;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+    &:hover {
+      color:magenta;
+    }
+  }
+}
 .close-paging-example-1 {
   cursor:pointer;
 }
@@ -53,12 +79,13 @@
   &:hover {
     opacity:.8;
   }
-  .button-close {
-    right:40px;
-    position:absolute;
+  > span {
+    margin-left:10px;
+    float:right;
     font-family:HelveticaNeueLTStd-Hv;
-    font-size:24px;
+    font-size:20px;
     cursor:pointer;
+    text-align:right;
     &:hover {
       text-decoration:underline;
     }

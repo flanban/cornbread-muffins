@@ -17,6 +17,18 @@ class DesignController < ApplicationController
     render :layout => false
   end
   
+  def ui_hr
+    render :layout => false
+  end
+  
+  def ui_about
+    render :layout => false
+  end
+  
+  def ui_tax
+    render :layout => false
+  end
+  
   def ui_blog
     render :layout => false
   end
