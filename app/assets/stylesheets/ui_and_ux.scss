@@ -47,8 +47,11 @@ body.ui_and_ux.design {
       text-indent:1em;
       text-transform:lowercase;
       a {
-        font-size:13px;
-        padding: 4px 0;        
+        font-size:14px;
+        padding: 6px 0;
+        &:hover {
+          color:red;
+        }        
       }
     }
   }

@@ -4,7 +4,7 @@ $( document ).ready(function(e) {
   //show slider
   $('body').on('click', '.slider-link', function (e){
     e.preventDefault();
-    $('#slider-wrapper, .slider-nav').fadeIn();
+    $('#slider-wrapper').fadeIn();
     slideNum = $(this).index();
     //console.log(slideNum)
   });
@@ -61,6 +61,8 @@ function initSlider() {
     startSlideId:slideNum, 
   }).data('royalSlider');
   $('.rsGCaption').appendTo('.slider-nav');
+  $('.slider-nav').fadeIn();
+  
 }
 
 initSlider();
