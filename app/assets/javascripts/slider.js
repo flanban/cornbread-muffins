@@ -1,5 +1,6 @@
-$( document ).ready(function(e) {
+slideNum = ''
 
+$( document ).ready(function(e) {
   /////////////show slider//////////////
   //show slider
   $('body').on('click', '.slider-link', function (e){
