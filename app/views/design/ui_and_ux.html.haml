@@ -1,9 +1,7 @@
 %div.slider-nav.hidden
   %span.button-close close
-  %p.rsCaption
-    Home Page Wireframe UI v1.0
-.royalSlider.image-slider.hidden
-  %p poo
+  
+#slider-wrapper
   
 %h2.left UI</br>&</br>UX
   
@@ -12,31 +10,35 @@
   %dt
     =link_to 'Home','#'
   %dd
-    =link_to 'v1.0', '#'   , :class => "slider-link", :'data-page-name' => "<p>stuff</p></img src='/assets/spacecat.png' class='rsImg'>"
-    =link_to 'steps, paging', '#'   , :class => "paging-example-link"
+    =link_to 'v1.0', { :controller => "design", :action => "ui_home" }, :remote => true, :class => 'slider-link'
+    =link_to 'steps, paging example', { :controller => "design", :action => "paging_example" }, :remote => true, :class => 'paging-example-link'
+
+
   %dt
     =link_to('Pricing','#')
   %dd
-    =link_to 'v1.0', '#', :class => "slider-link", :'data-page-name' => '<div>Pricing</div><div>poo</div>'
+    =link_to 'v1.0', { :controller => "design", :action => "ui_pricing" }, :remote => true, :class => 'slider-link'
+
+  %dt
+    =link_to('Blog','#')
+  %dd
+    =link_to 'root page v1.0', { :controller => "design", :action => "ui_blog" }, :remote => true, :class => 'slider-link'
+    =link_to 'entry page v1.0', { :controller => "design", :action => "ui_blog" }, :remote => true, :class => 'slider-link'
+
+  %dt
+    =link_to('Law','#')
+  %dd
+    =link_to 'v1.0', { :controller => "design", :action => "ui_law" }, :remote => true, :class => 'slider-link'
 
   %dt
     =link_to('HR','#')
   %dd
-    =link_to 'v1.0', image_path('spacecat.png')
+    =link_to 'space cat', image_path('spacecat.png')
 
   %dt.strikethru
     =link_to('Tax','#')
   %dd.strikethru
-    =link_to 'v1.0', '#', :class => "slider-link", :'data-page-name' => '<div>Tax</div><div>poo</div>'
-
-  %dt.strikethru
-    =link_to('Law','#')
-  %dd.strikethru
     =link_to('v0.0','#')
 
-  %dt.strikethru
-    =link_to('Blog','#')
-  %dd.strikethru
-    =link_to('v0.0','#')
 
 

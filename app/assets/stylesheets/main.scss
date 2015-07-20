@@ -32,6 +32,23 @@ a {
   opacity:.4;
 }
 
+.scroll-y {
+  overflow-y:scroll;
+}
+.scroll-auto {
+  overflow:auto;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.rsImg {
+  padding: 0 30px;
+  width:100%;
+  background-color:#656565;
+}
+
 .hidden {
   display:none;
 }

@@ -1,35 +1,31 @@
-$(function() {
-  
+function initSlider() {
+  var si = $('.royalSlider').royalSlider({
+    controlNavigation:'none',
+    imageScaleMode:'none',
+    imageScalePadding:6,
+    imageAlignCenter:false,
+    slidesSpacing:0,
+    globalCaption:true,
+    arrowNav:false,
+    loop:false,
+    usePreloader: true  
+  })  
+}
 
-  $('.royalSlider').royalSlider({
-    // optionally other options
-    //slides: '<a class="rsImg" href="/img/image1.jpg">1<span class="rsTmb">thumbnail text 1</span></a><a class="rsImg"    href="/img/image2.jpg">2<span class="rsTmb">thumbnail text 2</span></a>'
-  });
-
-  
-  
-
+$( document ).ready(function() {
+  initSlider();
   $('body').on('click', '.slider-link', function (e){
-    
-    $('.slider-nav').fadeIn('slow');
-    
-    var pageSlides = $(this).attr('data-page-name')
-  
-
     e.preventDefault();
-    $('.royalSlider').fadeIn();
-    $('.royalSlider').royalSlider('destroy').empty().royalSlider({
-      slides: pageSlides,
-      // other options... for example:
-      imageScaleMode: 'false',
-    });
+    $('.slider-nav').fadeIn('slow');
+    $('.royalSlider, #slider-wrapper').fadeIn();
+//    var slideNum = $(this).index()
   });
-
 
   $('body').on('click', '.button-close', function (e){
       e.preventDefault();
       //$('.image-slider').royalSlider('destroy').empty();
-      $('.slider-nav, .image-slider').fadeOut('slow');
-  });
-  
+      $('.slider-nav, .image-slider, #slider-wrapper').fadeOut('slow');
+  });  
 });
+
+
