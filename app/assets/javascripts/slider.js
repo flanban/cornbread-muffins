@@ -4,8 +4,7 @@ $( document ).ready(function(e) {
   //show slider
   $('body').on('click', '.slider-link', function (e){
     e.preventDefault();
-    $('.slider-nav').fadeIn('slow');
-    $('.royalSlider, #slider-wrapper').fadeIn();
+    $('#slider-wrapper, .slider-nav').fadeIn();
     slideNum = $(this).index();
     //console.log(slideNum)
   });
@@ -15,8 +14,9 @@ $( document ).ready(function(e) {
   }
   $('body').on('click', '.button-close', function (e){
       e.preventDefault();
-      $('.slider-nav, .image-slider, #slider-wrapper').fadeOut('slow');
+      $('.slider-nav, #slider-wrapper').fadeOut('slow');
       destroyCaption();
+      si.destroy()
   });
   
   ///////////// slide descrition flyout //////////////
@@ -47,7 +47,7 @@ $( document ).ready(function(e) {
 
 function initSlider() {
   
-  var si = $('.royalSlider').royalSlider({
+  si = $('.royalSlider').royalSlider({
     controlNavigation:'none',
     imageScaleMode:'none',
     imageScalePadding:6,
