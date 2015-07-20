@@ -17,7 +17,7 @@ $( document ).ready(function(e) {
       e.preventDefault();
       $('.slider-nav, #slider-wrapper').fadeOut('slow');
       destroyCaption();
-      si.destroy()
+      $('#slider-wrapper').empty()
   });
   
   ///////////// slide descrition flyout //////////////
@@ -63,7 +63,6 @@ function initSlider() {
   }).data('royalSlider');
   $('.rsGCaption').appendTo('.slider-nav');
   $('.slider-nav').fadeIn();
-  
 }
 
 initSlider();
